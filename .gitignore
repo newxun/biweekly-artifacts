@@ -1,0 +1,19 @@
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Logs and temporary files
+*.log
+tmp/
+temp/
+
+# Common dependency directories
+node_modules/
+.venv/
+venv/
+
+# Build outputs
+dist/
+build/
+coverage/
