@@ -36,6 +36,11 @@ biweekly-artifacts/
 ├── CONTRIBUTING.md
 ├── artifacts/
 │   ├── README.md
+│   ├── agents/
+│   │   ├── README.md
+│   │   └── project-familiarization-agent/
+│   │       ├── README.md
+│   │       └── agent.md
 │   ├── prompts/
 │   │   └── README.md
 │   ├── workflows/
@@ -62,7 +67,7 @@ biweekly-artifacts/
 - `templates/` 放可复制的结构模板，保证新增 Artifact 的质量下限。
 - `docs/` 放长期原则、演进路线和设计说明，避免 README 变得过长。
 - 第一版只保留少量目录，避免一开始建立几十个空分类。
-- 示例 Artifact 选择 Code Review，因为它是高频、真实、可复用的开发场景。
+- 示例 Artifact 选择项目熟悉 Agent 和 Code Review Workflow，因为它们都是高频、真实、可复用的开发场景。
 
 ## 每个 Artifact 建议包含
 
@@ -85,7 +90,7 @@ biweekly-artifacts/
 2. `CONTRIBUTING.md`，说明如何新增、维护和评估 Artifact。
 3. `templates/artifact-template.md`，作为所有 Artifact 的统一模板。
 4. 各目录 README，说明职责和放置规则。
-5. 一个真实示例：AI 辅助 Code Review Workflow 和 Checklist。
+5. 真实示例：Project Familiarization Agent、AI 辅助 Code Review Workflow 和 Checklist。
 
 ## 使用方式
 

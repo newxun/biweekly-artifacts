@@ -4,7 +4,7 @@
 
 ## Near Term
 
-- 持续补充真实研发场景中的 Prompt、Workflow 和 Checklist。
+- 持续补充真实研发场景中的 Agent、Prompt、Workflow 和 Checklist。
 - 为高频场景补充最小可用示例。
 - 记录每个 Artifact 的失败案例和限制。
 
@@ -12,7 +12,6 @@
 
 当真实内容积累足够时，可以考虑增加：
 
-- `artifacts/agents/`：面向特定研发任务的 Agent 设计。
 - `artifacts/skills/`：可安装或可复用的 Skill。
 - `artifacts/mcp/`：MCP Server、工具说明和集成经验。
 - `artifacts/evaluations/`：Prompt、Workflow、Agent 的评估方法。
