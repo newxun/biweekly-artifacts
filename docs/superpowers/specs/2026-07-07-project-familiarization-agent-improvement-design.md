@@ -17,13 +17,14 @@
 
 ## 范围
 
-这次只更新现有 artifact：
+这次主要更新现有 artifact，并保存一份轻量设计记录：
 
 - `artifacts/agents/project-familiarization-agent/agent.md`
 - `artifacts/agents/project-familiarization-agent/README.md`
 - 在同一 artifact 目录下新增报告模板
+- `docs/superpowers/specs/2026-07-07-project-familiarization-agent-improvement-design.md`
 
-本次不新增可运行自动化，也不调整仓库级目录结构。
+本次不新增可运行自动化，也不调整核心 artifact 目录结构。
 
 ## 行为设计
 
