@@ -6,6 +6,7 @@
 
 - `principles.md`：仓库的长期原则。
 - `roadmap.md`：可持续演进方向。
+- `superpowers/specs/`：较小范围改动的设计记录和一次性规格说明。
 
 ## 使用建议
 
