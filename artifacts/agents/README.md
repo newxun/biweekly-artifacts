@@ -7,7 +7,8 @@ Agent 应保持单一职责，明确边界，并遵循 Augment Humans, Not Repla
 ## 当前 Agent
 
 - `project-familiarization-agent/`：帮助临时借调到陌生项目组的开发者，在编码前快速完成项目熟悉。
-- `development-readiness-agent/`：通过项目熟悉、环境验证和任务指引，让临时参与者达到可交接的开发就绪状态。
+
+> `development-readiness-agent` 原在此目录，因其本质是人在环、跨会话的主线工作流，已改为 Skill 形态并迁至 [`../skills/development-readiness-agent/`](../skills/development-readiness-agent/)。
 
 ## 放置规则
 
