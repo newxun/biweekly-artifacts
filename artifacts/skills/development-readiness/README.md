@@ -39,7 +39,7 @@
 - [`reference/methodology.md`](reference/methodology.md)：按需加载——各阶段详查清单、完成门槛、证据模型细则与失败分类。
 - [`reference/protocols.md`](reference/protocols.md)：按需加载——确认协议与修复批次模板、专项子 Agent 规则、交接文档与最终输出。
 - [`development-readiness-report-template.md`](development-readiness-report-template.md)：阶段二检查点和阶段三最终交接模板。
-- [`../../evaluations/development-readiness-agent-scenarios.md`](../../evaluations/development-readiness-agent-scenarios.md)：通用场景化评估用例。
+- [`../../evaluations/development-readiness-scenarios.md`](../../evaluations/development-readiness-scenarios.md)：通用场景化评估用例。
 
 ## 形态说明
 
