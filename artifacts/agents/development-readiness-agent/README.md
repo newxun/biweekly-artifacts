@@ -35,23 +35,31 @@
 
 ## Contents
 
-- [`agent.md`](agent.md)：可直接作为自定义 Agent 或系统指令使用的中文 Prompt。
+- [`SKILL.md`](SKILL.md)：Skill 入口（含触发描述 frontmatter），常驻加载的精简内核——角色、硬边界、证据标签、三阶段循环、启动与回应风格。
+- [`reference/methodology.md`](reference/methodology.md)：按需加载——各阶段详查清单、完成门槛、证据模型细则与失败分类。
+- [`reference/protocols.md`](reference/protocols.md)：按需加载——确认协议与修复批次模板、专项子 Agent 规则、交接文档与最终输出。
 - [`development-readiness-report-template.md`](development-readiness-report-template.md)：阶段二检查点和阶段三最终交接模板。
 - [`../../evaluations/development-readiness-agent-scenarios.md`](../../evaluations/development-readiness-agent-scenarios.md)：通用场景化评估用例。
+
+## 形态说明
+
+这套指令是**人在环、跨会话**的主线工作流：启动要确认信息、副作用要用户批准、阶段之间与会话之间要交接。因此它更适合作为 **Skill**（在主对话里被按需加载并遵循），而**不是**塞进一个非交互、隔离运行的子 Agent。真正适合子 Agent 的，只有其中「专项调查」这类边界明确、可自治、无需用户确认的子问题（见 `reference/protocols.md`）。
+
+`SKILL.md` 以渐进披露组织：常驻的只是精简内核与「何时去读哪个 reference」的指针，大部头（确认协议、阶段清单、报告模板）在需要时才读入。
 
 ## Usage
 
 ### Claude Code
 
-将 [`agent.md`](agent.md) 作为项目外的自定义 Agent 指令或当前会话的系统级工作说明使用，并授予它读取仓库、搜索、执行 Shell 和查看 Git 的能力。
+作为 Agent Skill 使用：将本目录放到 Claude Code 能发现 Skill 的位置，`SKILL.md` 的 frontmatter `description` 用于自动触发；也可配一个 slash command（如 `/dev-readiness`）作为显式入口。授予读取仓库、搜索、执行 Shell 和查看 Git 的能力。
 
-不要把 Prompt 中的通用规则替换成某个项目的固定技术方案。项目特有信息应通过启动消息、仓库证据或交接文档提供。
+不要把通用规则替换成某个项目的固定技术方案。项目特有信息应通过启动消息、仓库证据或交接文档提供。
 
-### Codex
+### Codex 或其他工具
 
-将 [`agent.md`](agent.md) 作为 Agent 指令使用，确保工作目录指向目标仓库，并允许文件读取、代码搜索、Shell 和 Git 操作。
+将 [`SKILL.md`](SKILL.md) 作为主 Agent 指令使用，需要细节时按其中指针读取 `reference/` 下的文件。确保工作目录指向目标仓库，并允许文件读取、代码搜索、Shell 和 Git 操作。
 
-如果运行环境不支持某项工具，Agent 应继续完成可验证部分，并把受影响结论降级为 `[代码证据]`、`[未确认]` 或 `[证据冲突]`。
+如果运行环境不支持某项工具，应继续完成可验证部分，并把受影响结论降级为 `[代码证据]`、`[未确认]` 或 `[证据冲突]`。
 
 ### Suggested Start
 
