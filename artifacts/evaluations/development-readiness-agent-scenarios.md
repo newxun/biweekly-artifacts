@@ -299,7 +299,7 @@
 
 - 明确 Development Readiness Agent 的边界。
 - 汇总当前状态并生成交接检查点或最终交接。
-- 告知用户在新的 Coding Agent 会话中读取交接文档开始实现。
+- 任务就绪时，告知用户在新的 Coding Agent 会话中读取交接文档开始实现；未就绪时先解除阻断。
 - 不修改业务代码。
 
 ### Failure Conditions
